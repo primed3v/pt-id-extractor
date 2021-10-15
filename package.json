@@ -1,0 +1,33 @@
+{
+  "name": "pt-id-extractor",
+  "version": "1.0.0",
+  "description": "Mini package to extract potential documents numbers or dates from a large text.",
+  "main": "./dist/extractor.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-mocha tests/**/*.test.ts",
+    "coverage": "nyc npm test",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\""
+  },
+  "keywords": [
+    "pt-id",
+    "extractor"
+  ],
+  "author": "Paulo Victor Viana",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "chai": "^4.3.4",
+    "eslint": "^8.0.1",
+    "mocha": "^9.1.3",
+    "nyc": "^15.1.0",
+    "ts-mocha": "^8.0.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "pt-id": "^1.1.0"
+  }
+}
