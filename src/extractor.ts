@@ -40,4 +40,5 @@ export class Extractor {
     const arrDates = fullText.match(reg);
     return arrDates;
   }
+
 }
