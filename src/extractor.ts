@@ -1,34 +1,43 @@
 import { environment } from "./environments/environment";
+import { Util } from "./util";
 
 export class Extractor {
+  private util = new Util();
 
-    extractNIFs(fullText: string): RegExpMatchArray | null {
-        const reg = new RegExp(environment.regex_nif, "g");
-        const arrNifs = fullText.match(reg);
-        return arrNifs;
+  extractNIFs(fullText: string): string[] | null {
+    const reg = new RegExp(environment.regex_nif, "g");
+    const arrNifs = fullText.match(reg);
+    return arrNifs;
+  }
+
+  extractCCs(fullText: string): string[] | null {
+    const reg = new RegExp(environment.regex_cc, "g");
+    const arrCCs = fullText.match(reg)?.map(val => { return val.replaceAll(" ", "").trim()});
+    if (!arrCCs) {
+      const arrCCsMistakesChecked = this.util.checkCCMistakes(fullText);
+      return arrCCsMistakesChecked;
     }
-
-    extractCCs(fullText: string): RegExpMatchArray | null {
-        const reg = new RegExp(environment.regex_cc, "g");
-        const arrCCs = fullText.match(reg);
+    else
+    {
         return arrCCs;
     }
+  }
 
-    extractBIs(fullText: string):  RegExpMatchArray | null  {
-        const reg = new RegExp(environment.regex_bi, "g")
-        const arrBIs = fullText.match(reg);
-        return arrBIs;
-    }
+  extractBIs(fullText: string): string[] | null {
+    const reg = new RegExp(environment.regex_bi, "g");
+    const arrBIs = fullText.match(reg);
+    return arrBIs;
+  }
 
-    extractNISSs(fullText: string):  RegExpMatchArray | null  {
-        const reg = new RegExp(environment.regex_niss, "g")
-        const arrNISSs = fullText.match(reg);
-        return arrNISSs;
-    }
+  extractNISSs(fullText: string): string[] | null {
+    const reg = new RegExp(environment.regex_niss, "g");
+    const arrNISSs = fullText.match(reg);
+    return arrNISSs;
+  }
 
-    extractDates(fullText: string):  RegExpMatchArray | null  {
-        const reg = new RegExp(environment.regex_dates, "g")
-        const arrDates = fullText.match(reg);
-        return arrDates;
-    }
+  extractDates(fullText: string): string[] | null {
+    const reg = new RegExp(environment.regex_dates, "g");
+    const arrDates = fullText.match(reg);
+    return arrDates;
+  }
 }
