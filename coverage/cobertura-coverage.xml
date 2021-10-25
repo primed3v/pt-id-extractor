@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="57" lines-covered="54" line-rate="0.9473" branches-valid="22" branches-covered="17" branch-rate="0.7726999999999999" timestamp="1634561609132" complexity="0" version="0.1">
+<coverage lines-valid="57" lines-covered="54" line-rate="0.9473" branches-valid="22" branches-covered="17" branch-rate="0.7726999999999999" timestamp="1635168663644" complexity="0" version="0.1">
   <sources>
     <source>/Users/pauloviana/Documents/GitHub/pt-id-extractor</source>
   </sources>
@@ -11,37 +11,37 @@
           <methods>
             <method name="(anonymous_0)" hits="1" signature="()V">
               <lines>
-                <line number="4" hits="1"/>
+                <line number="7" hits="1"/>
               </lines>
             </method>
             <method name="(anonymous_1)" hits="1" signature="()V">
               <lines>
-                <line number="7" hits="1"/>
+                <line number="11" hits="1"/>
               </lines>
             </method>
             <method name="(anonymous_2)" hits="2" signature="()V">
               <lines>
-                <line number="13" hits="2"/>
+                <line number="17" hits="2"/>
               </lines>
             </method>
             <method name="(anonymous_3)" hits="1" signature="()V">
               <lines>
-                <line number="15" hits="1"/>
+                <line number="19" hits="1"/>
               </lines>
             </method>
             <method name="(anonymous_4)" hits="1" signature="()V">
               <lines>
-                <line number="26" hits="1"/>
+                <line number="30" hits="1"/>
               </lines>
             </method>
             <method name="(anonymous_5)" hits="1" signature="()V">
               <lines>
-                <line number="32" hits="1"/>
+                <line number="36" hits="1"/>
               </lines>
             </method>
             <method name="(anonymous_6)" hits="1" signature="()V">
               <lines>
-                <line number="38" hits="1"/>
+                <line number="42" hits="1"/>
               </lines>
             </method>
           </methods>
@@ -49,25 +49,25 @@
             <line number="1" hits="1" branch="false"/>
             <line number="2" hits="1" branch="false"/>
             <line number="4" hits="1" branch="false"/>
-            <line number="5" hits="1" branch="false"/>
             <line number="8" hits="1" branch="false"/>
-            <line number="9" hits="1" branch="false"/>
-            <line number="10" hits="1" branch="false"/>
-            <line number="14" hits="2" branch="false"/>
-            <line number="15" hits="2" branch="true" condition-coverage="100% (4/4)"/>
-            <line number="16" hits="2" branch="true" condition-coverage="100% (2/2)"/>
-            <line number="17" hits="1" branch="false"/>
-            <line number="18" hits="1" branch="false"/>
+            <line number="12" hits="1" branch="false"/>
+            <line number="13" hits="1" branch="false"/>
+            <line number="14" hits="1" branch="false"/>
+            <line number="18" hits="2" branch="false"/>
+            <line number="19" hits="2" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="20" hits="2" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="21" hits="1" branch="false"/>
             <line number="22" hits="1" branch="false"/>
-            <line number="27" hits="1" branch="false"/>
-            <line number="28" hits="1" branch="false"/>
-            <line number="29" hits="1" branch="false"/>
+            <line number="26" hits="1" branch="false"/>
+            <line number="31" hits="1" branch="false"/>
+            <line number="32" hits="1" branch="false"/>
             <line number="33" hits="1" branch="false"/>
-            <line number="34" hits="1" branch="false"/>
-            <line number="35" hits="1" branch="false"/>
+            <line number="37" hits="1" branch="false"/>
+            <line number="38" hits="1" branch="false"/>
             <line number="39" hits="1" branch="false"/>
-            <line number="40" hits="1" branch="false"/>
-            <line number="41" hits="1" branch="false"/>
+            <line number="43" hits="1" branch="false"/>
+            <line number="44" hits="1" branch="false"/>
+            <line number="45" hits="1" branch="false"/>
           </lines>
         </class>
         <class name="util.ts" filename="src/util.ts" line-rate="0.9229999999999999" branch-rate="0.625">
@@ -108,12 +108,12 @@
             </method>
             <method name="(anonymous_1)" hits="2" signature="()V">
               <lines>
-                <line number="14" hits="2"/>
+                <line number="11" hits="2"/>
               </lines>
             </method>
             <method name="(anonymous_2)" hits="2" signature="()V">
               <lines>
-                <line number="21" hits="2"/>
+                <line number="18" hits="2"/>
               </lines>
             </method>
             <method name="(anonymous_3)" hits="2" signature="()V">
@@ -121,30 +121,35 @@
                 <line number="25" hits="2"/>
               </lines>
             </method>
+            <method name="(anonymous_4)" hits="2" signature="()V">
+              <lines>
+                <line number="29" hits="2"/>
+              </lines>
+            </method>
           </methods>
           <lines>
             <line number="1" hits="1" branch="false"/>
             <line number="2" hits="1" branch="false"/>
             <line number="5" hits="1" branch="false"/>
-            <line number="8" hits="2" branch="true" condition-coverage="50% (1/2)"/>
-            <line number="9" hits="2" branch="false"/>
-            <line number="11" hits="0" branch="false"/>
-            <line number="15" hits="2" branch="true" condition-coverage="100% (2/2)"/>
-            <line number="16" hits="1" branch="false"/>
-            <line number="18" hits="1" branch="false"/>
-            <line number="22" hits="2" branch="false"/>
-            <line number="26" hits="2" branch="true" condition-coverage="50% (1/2)"/>
-            <line number="27" hits="0" branch="false"/>
-            <line number="29" hits="2" branch="false"/>
-            <line number="30" hits="2" branch="false"/>
-            <line number="31" hits="2" branch="false"/>
-            <line number="32" hits="22" branch="false"/>
+            <line number="12" hits="2" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="13" hits="2" branch="false"/>
+            <line number="15" hits="0" branch="false"/>
+            <line number="19" hits="2" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="20" hits="1" branch="false"/>
+            <line number="22" hits="1" branch="false"/>
+            <line number="26" hits="2" branch="false"/>
+            <line number="30" hits="2" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="31" hits="0" branch="false"/>
+            <line number="33" hits="2" branch="false"/>
             <line number="34" hits="2" branch="false"/>
-            <line number="36" hits="2" branch="false"/>
-            <line number="37" hits="20" branch="false"/>
-            <line number="41" hits="2" branch="true" condition-coverage="100% (2/2)"/>
-            <line number="42" hits="1" branch="false"/>
-            <line number="44" hits="1" branch="false"/>
+            <line number="35" hits="2" branch="false"/>
+            <line number="36" hits="22" branch="false"/>
+            <line number="38" hits="2" branch="false"/>
+            <line number="40" hits="2" branch="false"/>
+            <line number="41" hits="20" branch="false"/>
+            <line number="45" hits="2" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="46" hits="1" branch="false"/>
+            <line number="48" hits="1" branch="false"/>
           </lines>
         </class>
       </classes>
