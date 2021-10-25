@@ -12,7 +12,7 @@ export class Extractor {
 
   extractCCs(fullText: string): string[] | null {
     const reg = new RegExp(environment.regex_cc, "g");
-    const arrCCs = fullText.match(reg)?.map(val => { return val.replaceAll(" ", "").trim()});
+    const arrCCs = fullText.match(reg)?.map(val => { return val.replace(/ /g, "").trim()});
     if (!arrCCs) {
       const arrCCsMistakesChecked = this.util.checkCCMistakes(fullText);
       return arrCCsMistakesChecked;

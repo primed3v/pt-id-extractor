@@ -11,7 +11,7 @@ export class Util {
 
     // Zero constantly confused with "o" letter in the middle of CC  ( 8 caracter index)
     fullText.match(regZeroMistake)?.forEach((value) => {
-      let simpleRes = value.replaceAll(" ", "").trim();
+      let simpleRes = value.replace(/ /g, "").trim();
 
       if (simpleRes[8] == "o") {
         simpleRes = simpleRes.replace("o", "0");

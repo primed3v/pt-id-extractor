@@ -1,6 +1,6 @@
 {
   "name": "pt-id-extractor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Mini package to extract potential documents numbers or dates from a large text.",
   "main": "./dist/extractor.js",
   "scripts": {
