@@ -3,6 +3,10 @@ import { environment } from "./environments/environment";
 
 
 export class Validators {
+
+    constructor() {
+        //
+    }
     
     validateNIF(nifP: string): boolean {
         if (nifP.match(environment.regex_nif)) {

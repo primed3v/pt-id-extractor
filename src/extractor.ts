@@ -2,7 +2,11 @@ import { environment } from "./environments/environment";
 import { Util } from "./util";
 
 export class Extractor {
-  private util = new Util();
+   util: Util;
+
+  constructor() {
+    this.util = new Util();
+  }
 
   extractNIFs(fullText: string): string[] | null {
     const reg = new RegExp(environment.regex_nif, "g");
