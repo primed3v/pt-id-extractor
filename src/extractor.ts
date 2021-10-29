@@ -1,5 +1,6 @@
 import { environment } from "./environments/environment";
 import { Util } from "./util";
+import { filter,flatten, uniq, groupBy} from "lodash"
 
 export class Extractor {
    util: Util;
@@ -45,4 +46,11 @@ export class Extractor {
     return arrDates;
   }
 
+  extractPassaports(fullText: string): string[] | null {
+    const reg = new RegExp(environment.regex_passaportPtSimple, "g");
+    const arrPassaports = fullText.match(reg);
+    const groupped = groupBy(arrPassaports, function (n) {return n});
+    const result = uniq(flatten(filter(groupped, function (n) {return n.length > 1})));
+    return result;
+  }
 }

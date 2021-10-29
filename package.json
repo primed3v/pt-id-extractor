@@ -21,6 +21,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "^4.2.22",
+    "@types/lodash": "^4.14.176",
     "@types/mocha": "^9.0.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
@@ -32,6 +33,7 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
+    "lodash": "^4.17.21",
     "pt-id": "^1.1.0"
   }
 }
